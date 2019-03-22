@@ -50,7 +50,7 @@ const Start = (opts) => {
      load: async (directory, dbAddress) => {
        // directory not used here for redis
       if (!cache) {
-        cache = redis.createClient(this.opts)
+        cache = redis.createClient(opts)
       }
       const dbPath = path.join(dbAddress.root, dbAddress.path)
       return new Cache(cache, dbPath)
