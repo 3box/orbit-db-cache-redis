@@ -15,9 +15,8 @@ const keyMap = (key) => {
 }
 
 class Cache {
-  constructor (redisOpts) {
-    this.redisOpts = redisOpts
-    this.store = redis.createClient({host:'redis'})
+  constructor (redisOpts = {}) {
+    this.store = redis.createClient(redisOpts)
   }
 
   open () {
