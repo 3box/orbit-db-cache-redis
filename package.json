@@ -9,6 +9,6 @@
   "author": "Zach Ferland <zachferland@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "redis": "^2.8.0"
+    "redis": "^3.1.1"
   }
 }
